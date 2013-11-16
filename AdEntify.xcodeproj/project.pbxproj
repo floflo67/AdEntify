@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542F098F182926220009A343 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F098E182926220009A343 /* Foundation.framework */; };
+		542F0991182926220009A343 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F0990182926220009A343 /* CoreGraphics.framework */; };
+		542F0993182926220009A343 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F0992182926220009A343 /* UIKit.framework */; };
+		542F0999182926220009A343 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 542F0997182926220009A343 /* InfoPlist.strings */; };
+		542F099B182926220009A343 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F099A182926220009A343 /* main.m */; };
+		542F099F182926220009A343 /* AdEntifyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F099E182926220009A343 /* AdEntifyAppDelegate.m */; };
+		542F09A2182926220009A343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542F09A0182926220009A343 /* Main.storyboard */; };
+		542F09A5182926220009A343 /* AdEntifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09A4182926220009A343 /* AdEntifyViewController.m */; };
+		542F09A7182926220009A343 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542F09A6182926220009A343 /* Images.xcassets */; };
+		542F09AE182926220009A343 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F09AD182926220009A343 /* XCTest.framework */; };
+		542F09AF182926220009A343 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F098E182926220009A343 /* Foundation.framework */; };
+		542F09B0182926220009A343 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F0992182926220009A343 /* UIKit.framework */; };
+		542F09B8182926220009A343 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 542F09B6182926220009A343 /* InfoPlist.strings */; };
+		542F09BA182926220009A343 /* AdEntifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09B9182926220009A343 /* AdEntifyTests.m */; };
+		542F09C518292AC80009A343 /* InstagramPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09C418292AC80009A343 /* InstagramPicture.m */; };
+		542F09CC18292DEE0009A343 /* InstagramUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09CB18292DEE0009A343 /* InstagramUser.m */; };
+		542F09CF18292E500009A343 /* InstagramComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09CE18292E500009A343 /* InstagramComment.m */; };
+		542F09D318292F6C0009A343 /* InstagramImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09D218292F6C0009A343 /* InstagramImage.m */; };
+		542F09D618292F880009A343 /* InstagramVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09D518292F880009A343 /* InstagramVideo.m */; };
+		542F09D918292FBF0009A343 /* MediaResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09D818292FBF0009A343 /* MediaResolution.m */; };
+		542F09DD18293D050009A343 /* DetailImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F09DC18293D050009A343 /* DetailImageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		542F09B1182926220009A343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542F0983182926220009A343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542F098A182926220009A343;
+			remoteInfo = AdEntify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		542F098B182926220009A343 /* AdEntify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdEntify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542F098E182926220009A343 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		542F0990182926220009A343 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		542F0992182926220009A343 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		542F0996182926220009A343 /* AdEntify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdEntify-Info.plist"; sourceTree = "<group>"; };
+		542F0998182926220009A343 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		542F099A182926220009A343 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		542F099C182926220009A343 /* AdEntify-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdEntify-Prefix.pch"; sourceTree = "<group>"; };
+		542F099D182926220009A343 /* AdEntifyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdEntifyAppDelegate.h; sourceTree = "<group>"; };
+		542F099E182926220009A343 /* AdEntifyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdEntifyAppDelegate.m; sourceTree = "<group>"; };
+		542F09A1182926220009A343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		542F09A3182926220009A343 /* AdEntifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdEntifyViewController.h; sourceTree = "<group>"; };
+		542F09A4182926220009A343 /* AdEntifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdEntifyViewController.m; sourceTree = "<group>"; };
+		542F09A6182926220009A343 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		542F09AC182926220009A343 /* AdEntifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdEntifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542F09AD182926220009A343 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		542F09B5182926220009A343 /* AdEntifyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdEntifyTests-Info.plist"; sourceTree = "<group>"; };
+		542F09B7182926220009A343 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		542F09B9182926220009A343 /* AdEntifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdEntifyTests.m; sourceTree = "<group>"; };
+		542F09C318292AC80009A343 /* InstagramPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramPicture.h; sourceTree = "<group>"; };
+		542F09C418292AC80009A343 /* InstagramPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramPicture.m; sourceTree = "<group>"; };
+		542F09CA18292DEE0009A343 /* InstagramUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramUser.h; sourceTree = "<group>"; };
+		542F09CB18292DEE0009A343 /* InstagramUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramUser.m; sourceTree = "<group>"; };
+		542F09CD18292E500009A343 /* InstagramComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramComment.h; sourceTree = "<group>"; };
+		542F09CE18292E500009A343 /* InstagramComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramComment.m; sourceTree = "<group>"; };
+		542F09D118292F6C0009A343 /* InstagramImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramImage.h; sourceTree = "<group>"; };
+		542F09D218292F6C0009A343 /* InstagramImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramImage.m; sourceTree = "<group>"; };
+		542F09D418292F880009A343 /* InstagramVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramVideo.h; sourceTree = "<group>"; };
+		542F09D518292F880009A343 /* InstagramVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramVideo.m; sourceTree = "<group>"; };
+		542F09D718292FBF0009A343 /* MediaResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaResolution.h; sourceTree = "<group>"; };
+		542F09D818292FBF0009A343 /* MediaResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaResolution.m; sourceTree = "<group>"; };
+		542F09DB18293D050009A343 /* DetailImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailImageViewController.h; sourceTree = "<group>"; };
+		542F09DC18293D050009A343 /* DetailImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailImageViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542F0988182926220009A343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F0991182926220009A343 /* CoreGraphics.framework in Frameworks */,
+				542F0993182926220009A343 /* UIKit.framework in Frameworks */,
+				542F098F182926220009A343 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542F09A9182926220009A343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F09AE182926220009A343 /* XCTest.framework in Frameworks */,
+				542F09B0182926220009A343 /* UIKit.framework in Frameworks */,
+				542F09AF182926220009A343 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542F0982182926220009A343 = {
+			isa = PBXGroup;
+			children = (
+				542F0994182926220009A343 /* AdEntify */,
+				542F09B3182926220009A343 /* AdEntifyTests */,
+				542F098D182926220009A343 /* Frameworks */,
+				542F098C182926220009A343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		542F098C182926220009A343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542F098B182926220009A343 /* AdEntify.app */,
+				542F09AC182926220009A343 /* AdEntifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542F098D182926220009A343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542F098E182926220009A343 /* Foundation.framework */,
+				542F0990182926220009A343 /* CoreGraphics.framework */,
+				542F0992182926220009A343 /* UIKit.framework */,
+				542F09AD182926220009A343 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		542F0994182926220009A343 /* AdEntify */ = {
+			isa = PBXGroup;
+			children = (
+				542F09C618292CFF0009A343 /* InstagramClass */,
+				542F099D182926220009A343 /* AdEntifyAppDelegate.h */,
+				542F099E182926220009A343 /* AdEntifyAppDelegate.m */,
+				542F09A0182926220009A343 /* Main.storyboard */,
+				542F09A3182926220009A343 /* AdEntifyViewController.h */,
+				542F09A4182926220009A343 /* AdEntifyViewController.m */,
+				542F09DB18293D050009A343 /* DetailImageViewController.h */,
+				542F09DC18293D050009A343 /* DetailImageViewController.m */,
+				542F09A6182926220009A343 /* Images.xcassets */,
+				542F0995182926220009A343 /* Supporting Files */,
+			);
+			path = AdEntify;
+			sourceTree = "<group>";
+		};
+		542F0995182926220009A343 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				542F0996182926220009A343 /* AdEntify-Info.plist */,
+				542F0997182926220009A343 /* InfoPlist.strings */,
+				542F099A182926220009A343 /* main.m */,
+				542F099C182926220009A343 /* AdEntify-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		542F09B3182926220009A343 /* AdEntifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				542F09B9182926220009A343 /* AdEntifyTests.m */,
+				542F09B4182926220009A343 /* Supporting Files */,
+			);
+			path = AdEntifyTests;
+			sourceTree = "<group>";
+		};
+		542F09B4182926220009A343 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				542F09B5182926220009A343 /* AdEntifyTests-Info.plist */,
+				542F09B6182926220009A343 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		542F09C618292CFF0009A343 /* InstagramClass */ = {
+			isa = PBXGroup;
+			children = (
+				542F09DA182930080009A343 /* Media */,
+				542F09C318292AC80009A343 /* InstagramPicture.h */,
+				542F09C418292AC80009A343 /* InstagramPicture.m */,
+				542F09CA18292DEE0009A343 /* InstagramUser.h */,
+				542F09CB18292DEE0009A343 /* InstagramUser.m */,
+				542F09CD18292E500009A343 /* InstagramComment.h */,
+				542F09CE18292E500009A343 /* InstagramComment.m */,
+			);
+			name = InstagramClass;
+			sourceTree = "<group>";
+		};
+		542F09DA182930080009A343 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				542F09D418292F880009A343 /* InstagramVideo.h */,
+				542F09D518292F880009A343 /* InstagramVideo.m */,
+				542F09D118292F6C0009A343 /* InstagramImage.h */,
+				542F09D218292F6C0009A343 /* InstagramImage.m */,
+				542F09D718292FBF0009A343 /* MediaResolution.h */,
+				542F09D818292FBF0009A343 /* MediaResolution.m */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		542F098A182926220009A343 /* AdEntify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542F09BD182926220009A343 /* Build configuration list for PBXNativeTarget "AdEntify" */;
+			buildPhases = (
+				542F0987182926220009A343 /* Sources */,
+				542F0988182926220009A343 /* Frameworks */,
+				542F0989182926220009A343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdEntify;
+			productName = AdEntify;
+			productReference = 542F098B182926220009A343 /* AdEntify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		542F09AB182926220009A343 /* AdEntifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542F09C0182926220009A343 /* Build configuration list for PBXNativeTarget "AdEntifyTests" */;
+			buildPhases = (
+				542F09A8182926220009A343 /* Sources */,
+				542F09A9182926220009A343 /* Frameworks */,
+				542F09AA182926220009A343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542F09B2182926220009A343 /* PBXTargetDependency */,
+			);
+			name = AdEntifyTests;
+			productName = AdEntifyTests;
+			productReference = 542F09AC182926220009A343 /* AdEntifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542F0983182926220009A343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AdEntify;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Florian Reiss";
+				TargetAttributes = {
+					542F09AB182926220009A343 = {
+						TestTargetID = 542F098A182926220009A343;
+					};
+				};
+			};
+			buildConfigurationList = 542F0986182926220009A343 /* Build configuration list for PBXProject "AdEntify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 542F0982182926220009A343;
+			productRefGroup = 542F098C182926220009A343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542F098A182926220009A343 /* AdEntify */,
+				542F09AB182926220009A343 /* AdEntifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542F0989182926220009A343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F09A7182926220009A343 /* Images.xcassets in Resources */,
+				542F0999182926220009A343 /* InfoPlist.strings in Resources */,
+				542F09A2182926220009A343 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542F09AA182926220009A343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F09B8182926220009A343 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542F0987182926220009A343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F09D618292F880009A343 /* InstagramVideo.m in Sources */,
+				542F09A5182926220009A343 /* AdEntifyViewController.m in Sources */,
+				542F099F182926220009A343 /* AdEntifyAppDelegate.m in Sources */,
+				542F09CC18292DEE0009A343 /* InstagramUser.m in Sources */,
+				542F09D918292FBF0009A343 /* MediaResolution.m in Sources */,
+				542F09D318292F6C0009A343 /* InstagramImage.m in Sources */,
+				542F099B182926220009A343 /* main.m in Sources */,
+				542F09CF18292E500009A343 /* InstagramComment.m in Sources */,
+				542F09C518292AC80009A343 /* InstagramPicture.m in Sources */,
+				542F09DD18293D050009A343 /* DetailImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542F09A8182926220009A343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F09BA182926220009A343 /* AdEntifyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		542F09B2182926220009A343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542F098A182926220009A343 /* AdEntify */;
+			targetProxy = 542F09B1182926220009A343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		542F0997182926220009A343 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542F0998182926220009A343 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		542F09A0182926220009A343 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542F09A1182926220009A343 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		542F09B6182926220009A343 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542F09B7182926220009A343 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		542F09BB182926220009A343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		542F09BC182926220009A343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		542F09BE182926220009A343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdEntify/AdEntify-Prefix.pch";
+				INFOPLIST_FILE = "AdEntify/AdEntify-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		542F09BF182926220009A343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdEntify/AdEntify-Prefix.pch";
+				INFOPLIST_FILE = "AdEntify/AdEntify-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		542F09C1182926220009A343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AdEntify.app/AdEntify";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdEntify/AdEntify-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AdEntifyTests/AdEntifyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		542F09C2182926220009A343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AdEntify.app/AdEntify";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdEntify/AdEntify-Prefix.pch";
+				INFOPLIST_FILE = "AdEntifyTests/AdEntifyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542F0986182926220009A343 /* Build configuration list for PBXProject "AdEntify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542F09BB182926220009A343 /* Debug */,
+				542F09BC182926220009A343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542F09BD182926220009A343 /* Build configuration list for PBXNativeTarget "AdEntify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542F09BE182926220009A343 /* Debug */,
+				542F09BF182926220009A343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542F09C0182926220009A343 /* Build configuration list for PBXNativeTarget "AdEntifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542F09C1182926220009A343 /* Debug */,
+				542F09C2182926220009A343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542F0983182926220009A343 /* Project object */;
+}
